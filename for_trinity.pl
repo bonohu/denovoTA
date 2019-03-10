@@ -5,7 +5,7 @@
 my $c = 0; # line count value
 my $strand = shift(@ARGV); # 1 or 2
 
-print STDERR "usage: \n% perl for_trinity.pl 1 (or 2) < SRA.fastq > processed.fastq" if ($strand eq '') ;
+print STDERR "usage: % perl for_trinity.pl 1 (or 2) < SRA.fastq > processed.fastq\n" if ($strand eq '') ;
 
 # STDIN: FASTQ file
 while(<STDIN>) {
