@@ -2,6 +2,8 @@
 # script to modify FASTQ header lines for Trinity program
 # Hidemasa Bono <bonohu@gmail.com>
 
+# usage: % perl for_trinity.pl < SRA.fastq > processed.fastq
+
 my $c = 0; # line count value
 my $strand = shift(@ARGV); # 1 or 2
 
