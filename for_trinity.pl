@@ -13,7 +13,7 @@ while(<STDIN>) {
 	if( $c++ % 4 != 0) {
 		print "$_\n";
 	} else {
-		if(/^\@[SDE]RR\d+\.\d+\s+(\S+)/) {
+		if(/^\@[SDE]RR\S+\s+(\S+)/) {
 			$id = $1;
 			print "\@$id/$strand\n";
   		} else {
